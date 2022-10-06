@@ -2,6 +2,7 @@ import { html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import "./components/counter";
 import "./components/home";
+import "./components/todo/todo";
 
 @customElement('my-app')
 export class MyApp extends LitElement {
@@ -11,8 +12,7 @@ export class MyApp extends LitElement {
 
   render() {
     return html`
-    <app-home></app-home>
-    <app-counter></app-counter>
+    <app-todo/>
 
     `;
   }
