@@ -1,0 +1,21 @@
+{
+  "name": "vite-lit-template",
+  "private": true,
+  "version": "0.0.0",
+  "files": [
+    "dist",
+    "types"
+  ],
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "lit": "^2.0.2",
+    "lit-tailwindcss": "^0.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4",
+    "vite": "^2.9.7"
+  }
+}
