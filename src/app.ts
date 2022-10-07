@@ -1,7 +1,5 @@
 import { html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import "./components/counter";
-import "./components/home";
 import "./components/todo/todo";
 
 @customElement('my-app')

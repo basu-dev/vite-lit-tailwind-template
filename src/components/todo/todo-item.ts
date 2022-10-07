@@ -32,7 +32,7 @@ export class TodoItem extends LitElement {
          ${this.todo}
          </div>
          ${this.completed ? html`
-         <button @click=${this.onInComplete} class="button button-grey">
+         <button @click=${this.onInComplete} class="button button-green btn-green">
             Mark as Incomplete
          </button>
             `:

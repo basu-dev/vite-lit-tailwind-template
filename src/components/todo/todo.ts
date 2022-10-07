@@ -45,16 +45,16 @@ export class Todo extends LitElement {
             <h1 class="text-center">Todo</h1>
             <add-todo @onTodoAdded=${this.onTodoAdded} class="text-center"></add-todo>
             <br/>
-        <div class="todo-grid">
-            <div class="incomplete-list">
-                ${this.incompleteTodos.map(todo => html`<todo-item @onComplete=${() => this.handleOnComplete(todo)} .completed=${false} .todo=${todo}></todo-item>`)
+            <div class="todo-grid">
+                <div class="incomplete-list">
+                    ${this.incompleteTodos.map(todo => html`<todo-item @onComplete=${() => this.handleOnComplete(todo)} .completed=${false} .todo=${todo}></todo-item>`)
             }
-            </div>
-            <div class="completed-list">
-                ${this.completedTodos.map(todo => html`<todo-item @onInComplete=${() => this.handleOnInComplete(todo)} .completed=${true} .todo=${todo}></todo-item>`)
+                </div>
+                <div class="completed-list">
+                    ${this.completedTodos.map(todo => html`<todo-item @onInComplete=${() => this.handleOnInComplete(todo)} .completed=${true} .todo=${todo}></todo-item>`)
             }
+                </div>
             </div>
-        </div>
         </div>
     `;
     }
