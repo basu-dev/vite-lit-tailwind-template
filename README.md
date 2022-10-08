@@ -22,6 +22,6 @@ pnpm install
 
 Bundles all the files into one bundle with Vite.js.
 
-### npm/yarm/pnpm run dev
+### npm/yarn/pnpm start
 
 Runs the development server with Vite.js.
